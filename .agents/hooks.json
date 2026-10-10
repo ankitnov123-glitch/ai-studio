@@ -1,0 +1,22 @@
+{
+  "agent-capture": {
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "python agent_capture.py"
+      }
+    ],
+    "PostInvocation": [
+      {
+        "type": "command",
+        "command": "python agent_capture.py"
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "python agent_capture.py"
+      }
+    ]
+  }
+}
