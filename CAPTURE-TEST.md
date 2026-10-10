@@ -19,7 +19,7 @@
 
 ## 3. Log File Paths
 - **Session 1 Log File:** `.agent-logs/2026-10-10_10-51-13_ea67cb66-ea51-4126-b269-b910f1dc720b.md`
-- **Session 2 Log File:** Pending second session execution.
+- **Session 2 Log File:** `.agent-logs/2026-10-10_11-16-17_e32c53d8-ae54-4985-928e-fea8e35888dd.md`
 
 ## 4. Canary Entries (Raw)
 
@@ -40,7 +40,13 @@ Canary 1 received and verified. Prompt and response are recorded in .agent-logs/
 ```
 
 ### Canary 2 (Session 2):
-*(To be recorded upon running the canary in the second session)*
+```markdown
+[LOG_ENTRY type=PROMPT num=1 session=e32c53d8]
+timestamp: 2026-10-10T11:16:17Z
+model: gemini-3.8-flash
+
+CAPTURE TEST - 8X assignment , Ankit (session 2)
+```
 
 ## 5. Anything Tried First That Did Not Work
 - Directly piping from inside intermediate execution turns before `.git` repository was initialized. Antigravity discovers workspace customizations hierarchical to `.git`, so initializing git repository and deploying both the native lifecycle hooks (`.agents/hooks.json`) and the transcript sync daemon (`scripts/agent_capture.py`) provided the robust, permanent capture pipeline.
