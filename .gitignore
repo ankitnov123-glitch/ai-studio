@@ -1,2 +1,12 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+
+# Python
 __pycache__/
 *.py[cod]
+
+# Never ignore logs
+!.agent-logs
